@@ -7,7 +7,7 @@ import secrets
 import time
 from pathlib import Path
 
-DB_PATH = Path(__file__).parent / "cire.db"
+DB_PATH = Path(os.environ.get("DATA_DIR", str(Path(__file__).parent))) / "cire.db"
 
 
 async def init_db():

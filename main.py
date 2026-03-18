@@ -15,7 +15,7 @@ from pydantic import BaseModel
 from db import init_db, get_key_info, deduct_credit, log_usage, create_key
 
 # --- CIRE core import ---
-CIRE_DIR = Path("/home/k1/.openclaw/skills/cire")
+CIRE_DIR = Path(__file__).parent  # same directory as main.py
 sys.path.insert(0, str(CIRE_DIR))
 from run_cire import compute_result, load_json
 
