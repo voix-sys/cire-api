@@ -3,6 +3,7 @@ db.py — SQLite persistence for CIRE API keys and usage logs.
 """
 
 import aiosqlite
+import os
 import secrets
 import time
 from pathlib import Path
