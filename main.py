@@ -38,7 +38,7 @@ app = FastAPI(
         "**Authentication:** pass your API key in the `X-API-Key` header.\n\n"
         "**Billing:** 1 credit per `/v1/analyze` call."
     ),
-    version="0.1.0",
+    version="0.1.1",
     lifespan=lifespan,
 )
 
