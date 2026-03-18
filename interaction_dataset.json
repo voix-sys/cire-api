@@ -1,0 +1,162 @@
+[
+  {
+    "pair": [
+      "Alcohol Denat.",
+      "Fragrance"
+    ],
+    "risk_category": "interaction_risk",
+    "severity": 2,
+    "reason": "Concurrent Alcohol Denat. + Fragrance increases cumulative irritation potential.",
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "pair": [
+      "Ammonium Hydroxide",
+      "Hydrogen Peroxide"
+    ],
+    "risk_category": "interaction_risk",
+    "severity": 3,
+    "reason": "Concurrent Ammonium Hydroxide + Hydrogen Peroxide increases cumulative irritation potential.",
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "pair": [
+      "Benzoyl Peroxide",
+      "Hydroquinone"
+    ],
+    "risk_category": "interaction_risk",
+    "severity": 2,
+    "reason": "Concurrent Benzoyl Peroxide + Hydroquinone increases irritation and stability risk.",
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "pair": [
+      "Benzoyl Peroxide",
+      "Retinol"
+    ],
+    "risk_category": "interaction_risk",
+    "severity": 3,
+    "reason": "Concurrent Benzoyl Peroxide + Retinol increases cumulative irritation potential.",
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "pair": [
+      "Capsicum Frutescens Fruit Extract",
+      "Menthol"
+    ],
+    "risk_category": "interaction_risk",
+    "severity": 2,
+    "reason": "Concurrent Capsicum Frutescens Fruit Extract + Menthol increases cumulative irritation potential.",
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "pair": [
+      "Glycolic Acid",
+      "Lactic Acid"
+    ],
+    "risk_category": "interaction_risk",
+    "severity": 2,
+    "reason": "Concurrent Glycolic Acid + Lactic Acid increases cumulative exfoliation/irritation potential.",
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "pair": [
+      "Glycolic Acid",
+      "Retinal"
+    ],
+    "risk_category": "interaction_risk",
+    "severity": 3,
+    "reason": "Concurrent Glycolic Acid + Retinal increases cumulative irritation potential.",
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "pair": [
+      "Glycolic Acid",
+      "Retinol"
+    ],
+    "risk_category": "interaction_risk",
+    "severity": 3,
+    "reason": "Concurrent Glycolic Acid + Retinol increases cumulative irritation potential.",
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "pair": [
+      "Glycolic Acid",
+      "Retinyl Palmitate"
+    ],
+    "risk_category": "interaction_risk",
+    "severity": 3,
+    "reason": "Concurrent Glycolic Acid + Retinyl Palmitate increases cumulative irritation potential.",
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "pair": [
+      "Glycolic Acid",
+      "Salicylic Acid"
+    ],
+    "risk_category": "interaction_risk",
+    "severity": 2,
+    "reason": "Concurrent Glycolic Acid + Salicylic Acid increases cumulative exfoliation/irritation potential.",
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "pair": [
+      "Fragrance",
+      "Sodium Lauryl Sulfate"
+    ],
+    "risk_category": "interaction_risk",
+    "severity": 2,
+    "reason": "Concurrent Fragrance + Sodium Lauryl Sulfate increases cumulative irritation potential.",
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "pair": [
+      "Lactic Acid",
+      "Salicylic Acid"
+    ],
+    "risk_category": "interaction_risk",
+    "severity": 2,
+    "reason": "Concurrent Lactic Acid + Salicylic Acid increases cumulative exfoliation/irritation potential.",
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "pair": [
+      "Melaleuca Alternifolia (Tea Tree) Leaf Oil",
+      "Menthol"
+    ],
+    "risk_category": "interaction_risk",
+    "severity": 2,
+    "reason": "Concurrent Melaleuca Alternifolia (Tea Tree) Leaf Oil + Menthol increases cumulative irritation potential.",
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "pair": [
+      "Retinal",
+      "Salicylic Acid"
+    ],
+    "risk_category": "interaction_risk",
+    "severity": 3,
+    "reason": "Concurrent Retinal + Salicylic Acid increases cumulative irritation potential.",
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "pair": [
+      "Retinol",
+      "Salicylic Acid"
+    ],
+    "risk_category": "interaction_risk",
+    "severity": 3,
+    "reason": "Concurrent Retinol + Salicylic Acid increases cumulative irritation potential.",
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "pair": [
+      "Retinyl Palmitate",
+      "Salicylic Acid"
+    ],
+    "risk_category": "interaction_risk",
+    "severity": 3,
+    "reason": "Concurrent Retinyl Palmitate + Salicylic Acid increases cumulative irritation potential.",
+    "evidence_basis": "Industry consensus"
+  }
+]
