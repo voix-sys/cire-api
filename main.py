@@ -72,7 +72,7 @@ async def get_api_key(key: str = Security(api_key_header)):
 def root():
     return {
         "service": "CIRE API",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "docs": "/docs",
         "endpoints": {
             "analyze": "POST /v1/analyze",
