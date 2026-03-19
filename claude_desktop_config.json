@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "cire": {
+      "command": "python3",
+      "args": ["/path/to/cire-api/mcp_server.py"],
+      "description": "CIRE — Cosmetic Ingredient Risk Engine. Analyzes INCI ingredient lists for safety risks."
+    }
+  }
+}
