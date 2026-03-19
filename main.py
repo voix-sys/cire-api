@@ -115,6 +115,31 @@ async def credits(api_key: str = Depends(get_api_key)):
     }
 
 
+class RegisterRequest(BaseModel):
+    email: str
+    name: str
+
+
+@app.post("/v1/register", tags=["account"])
+async def register(req: RegisterRequest):
+    """
+    Register a new account. Returns an API key with 100 free credits.
+    Use the API key to call /v1/analyze or purchase more credits via /v1/checkout.
+    """
+    if not req.email or "@" not in req.email:
+        raise HTTPException(status_code=400, detail="Valid email required")
+
+    key = await create_key(req.name, req.email, credits=100)
+    return {
+        "api_key": key,
+        "name": req.name,
+        "email": req.email,
+        "credits": 100,
+        "message": "Welcome to CIRE! You have 100 free credits. Use X-API-Key header to authenticate.",
+        "docs": "https://web-production-9cdb4.up.railway.app/docs",
+    }
+
+
 @app.get("/v1/packages", tags=["billing"])
 def packages():
     """List available credit packages."""
@@ -123,7 +148,7 @@ def packages():
 
 @app.post("/v1/checkout", tags=["billing"])
 async def checkout(package_id: str, api_key: str = Depends(get_api_key)):
-    """Create a Paddle checkout URL to purchase credits."""
+    """Create a Paddle checkout URL to purchase credits. Returns URL."""
     base_url = os.environ.get("BASE_URL", "https://web-production-9cdb4.up.railway.app")
     url = create_checkout_url(
         package_id=package_id,
@@ -131,6 +156,22 @@ async def checkout(package_id: str, api_key: str = Depends(get_api_key)):
         success_url=f"{base_url}/v1/checkout/success",
     )
     return {"checkout_url": url}
+
+
+@app.get("/v1/checkout", tags=["billing"])
+async def checkout_redirect(package_id: str, api_key: str):
+    """Browser-friendly: redirects directly to Paddle checkout page."""
+    base_url = os.environ.get("BASE_URL", "https://web-production-9cdb4.up.railway.app")
+    # Validate key manually (no Depends for GET with query param)
+    info = await get_key_info(api_key)
+    if not info:
+        raise HTTPException(status_code=401, detail="Invalid API key")
+    url = create_checkout_url(
+        package_id=package_id,
+        api_key=api_key,
+        success_url=f"{base_url}/v1/checkout/success",
+    )
+    return RedirectResponse(url=url)
 
 
 @app.get("/v1/checkout/success", tags=["billing"])
