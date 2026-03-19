@@ -2,3 +2,4 @@ aiosqlite==0.22.1
 fastapi==0.135.1
 uvicorn==0.42.0
 pydantic==2.12.5
+paddle-python-sdk==1.13.0

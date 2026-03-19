@@ -75,6 +75,20 @@ async def log_usage(key: str, inci: str, risk_level: str):
         await db.commit()
 
 
+async def add_credits(key: str, credits: int) -> int:
+    """Add credits to an existing key. Returns new total."""
+    async with aiosqlite.connect(DB_PATH) as db:
+        await db.execute(
+            "UPDATE api_keys SET credits = credits + ? WHERE key = ?", (credits, key)
+        )
+        await db.commit()
+        async with db.execute(
+            "SELECT credits FROM api_keys WHERE key = ?", (key,)
+        ) as cur:
+            row = await cur.fetchone()
+            return row[0] if row else 0
+
+
 async def create_key(name: str, email: str | None, credits: int = 1000) -> str:
     """Generate a new API key and store it."""
     key = "cire-" + secrets.token_urlsafe(24)

@@ -4,15 +4,18 @@ CIRE API v0.1 — Cosmetic Ingredient Risk Engine
 M2M API for AI agents: pay-per-call model
 """
 
+import os
 import sys
 from contextlib import asynccontextmanager
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException, Security, Depends
+from fastapi import FastAPI, HTTPException, Security, Depends, Request
+from fastapi.responses import RedirectResponse
 from fastapi.security import APIKeyHeader
 from pydantic import BaseModel
 
-from db import init_db, get_key_info, deduct_credit, log_usage, create_key
+from db import init_db, get_key_info, deduct_credit, log_usage, create_key, add_credits
+from payments import create_checkout_url, verify_webhook, CREDIT_PACKAGES
 
 # --- CIRE core import ---
 CIRE_DIR = Path(__file__).parent  # same directory as main.py
@@ -110,6 +113,46 @@ async def credits(api_key: str = Depends(get_api_key)):
         "name": info["name"],
         "credits_remaining": info["credits"],
     }
+
+
+@app.get("/v1/packages", tags=["billing"])
+def packages():
+    """List available credit packages."""
+    return CREDIT_PACKAGES
+
+
+@app.post("/v1/checkout", tags=["billing"])
+async def checkout(package_id: str, api_key: str = Depends(get_api_key)):
+    """Create a Paddle checkout URL to purchase credits."""
+    base_url = os.environ.get("BASE_URL", "https://web-production-9cdb4.up.railway.app")
+    url = create_checkout_url(
+        package_id=package_id,
+        api_key=api_key,
+        success_url=f"{base_url}/v1/checkout/success",
+    )
+    return {"checkout_url": url}
+
+
+@app.get("/v1/checkout/success", tags=["billing"])
+def checkout_success():
+    return {"message": "Payment successful! Credits will be added to your account shortly."}
+
+
+@app.post("/v1/webhook", tags=["billing"], include_in_schema=False)
+async def paddle_webhook(request: Request):
+    """Paddle webhook — automatically adds credits after payment."""
+    payload = await request.body()
+    sig_header = request.headers.get("paddle-signature", "")
+    event = verify_webhook(payload, sig_header)
+
+    if event.get("event_type") == "transaction.completed":
+        custom_data = event.get("data", {}).get("custom_data", {})
+        api_key = custom_data.get("api_key")
+        credits = int(custom_data.get("credits", 0))
+        if api_key and credits:
+            await add_credits(api_key, credits)
+
+    return {"status": "ok"}
 
 
 @app.post("/v1/keys", tags=["admin"], include_in_schema=False)
