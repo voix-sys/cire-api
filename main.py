@@ -199,7 +199,7 @@ async def paddle_webhook(request: Request):
 @app.post("/v1/keys", tags=["admin"], include_in_schema=False)
 async def issue_key(req: KeyCreateRequest, admin_key: str = Security(api_key_header)):
     """Admin: issue a new API key. Requires admin key."""
-    if admin_key != "test-key-0001":  # TODO: proper admin auth
+    if admin_key != os.environ.get("ADMIN_KEY", ""):  # Set ADMIN_KEY in Railway env vars
         raise HTTPException(status_code=403, detail="Admin only")
     key = await create_key(req.name, req.email, req.credits)
     return {"api_key": key, "name": req.name, "credits": req.credits}

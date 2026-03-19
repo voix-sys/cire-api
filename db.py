@@ -35,10 +35,13 @@ async def init_db():
         async with db.execute("SELECT COUNT(*) FROM api_keys") as cur:
             count = (await cur.fetchone())[0]
         if count == 0:
-            await db.execute(
-                "INSERT INTO api_keys (key, name, email, credits, created_at) VALUES (?, ?, ?, ?, ?)",
-                ("test-key-0001", "dev", None, 9999, int(time.time()))
-            )
+            # Seed key from environment variable (never hardcoded)
+            seed_key = os.environ.get("SEED_API_KEY", "")
+            if seed_key:
+                await db.execute(
+                    "INSERT INTO api_keys (key, name, email, credits, created_at) VALUES (?, ?, ?, ?, ?)",
+                    (seed_key, "dev", None, 9999, int(time.time()))
+                )
         await db.commit()
 
 
