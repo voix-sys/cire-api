@@ -16,6 +16,7 @@ from pydantic import BaseModel
 
 from db import init_db, get_key_info, deduct_credit, log_usage, create_key, add_credits
 from payments import create_checkout_url, verify_webhook, CREDIT_PACKAGES
+from fastapi.middleware.cors import CORSMiddleware
 
 # --- CIRE core import ---
 CIRE_DIR = Path(__file__).parent  # same directory as main.py
@@ -43,6 +44,13 @@ app = FastAPI(
     ),
     version="0.1.1",
     lifespan=lifespan,
+)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 api_key_header = APIKeyHeader(name="X-API-Key", auto_error=False)
