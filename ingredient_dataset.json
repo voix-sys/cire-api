@@ -2143,5 +2143,2003 @@
     "risk_category": "acne_risk",
     "severity": 1,
     "evidence_basis": "Controversial / weak evidence"
+  },
+  {
+    "ingredient_name": "Acetyl Salicylic Acid",
+    "aliases": [
+      "Aspirin"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 2,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Boric Acid",
+    "aliases": [
+      "Boric Acid Powder"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 2,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Butyric Acid",
+    "aliases": [
+      "n-Butyric Acid"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 3,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Carbomer",
+    "aliases": [
+      "Carbopol"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Chlorhexidine Digluconate",
+    "aliases": [
+      "CHG"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 2,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Cocamidopropyl Hydroxysultaine",
+    "aliases": [
+      "CAPHS"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Dodecylbenzene Sulfonate",
+    "aliases": [
+      "Laurylbenzene Sulfonate"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Ethylene Glycol",
+    "aliases": [
+      "1,2-Ethanediol"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 2,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Fragrance Mix",
+    "aliases": [
+      "Mixed Fragrances"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 2,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Glycerin Monostearate",
+    "aliases": [
+      "GMS"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Hydroquinone Monobenzyl Ether",
+    "aliases": [
+      "Monobenzone"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 3,
+    "evidence_basis": "FDA advisory"
+  },
+  {
+    "ingredient_name": "Isostearic Acid",
+    "aliases": [
+      "Isostearic Acid"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Lauric Acid",
+    "aliases": [
+      "Dodecanoic Acid"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Magnesium Hydroxide",
+    "aliases": [
+      "Milk of Magnesia"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Oleamide DEA",
+    "aliases": [
+      "Oleic Diethanolamide"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 2,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "PABA",
+    "aliases": [
+      "Para-Aminobenzoic Acid"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 2,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "PEG-40 Hydrogenated Castor Oil",
+    "aliases": [
+      "Castor Oil PEG-40"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Polyquaternium-10",
+    "aliases": [
+      "PQ-10"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Quaternary Ammonium-15",
+    "aliases": [
+      "Quaternium-15"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 3,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Sodium Metabisulfite",
+    "aliases": [
+      "Sodium Pyrosulfite"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 2,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Sorbic Acid",
+    "aliases": [
+      "2,4-Hexadienoic Acid"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Titanium Dioxide",
+    "aliases": [
+      "TiO2"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 0,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Zinc Oxide",
+    "aliases": [
+      "ZnO"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 0,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Benzyl Salicylate",
+    "aliases": [
+      "Benzyl o-Hydroxybenzoate"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Citronellal",
+    "aliases": [
+      "3,7-Dimethyl-6-Octenal"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Geranium Oil",
+    "aliases": [
+      "Pelargonium Graveolens Oil"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Hexyl Salicylate",
+    "aliases": [
+      "Hexyl 2-Hydroxybenzoate"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 1,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Lyral",
+    "aliases": [
+      "Hydroxyisohexyl 3-Cyclohexene Carboxaldehyde"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 3,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Methyl 2-Octynoate",
+    "aliases": [
+      "Methyl Heptyne Carbonate"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Oak Moss Extract",
+    "aliases": [
+      "Evernia Prunastri Extract"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 3,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Tree Moss Extract",
+    "aliases": [
+      "Evernia Furfuracea Extract"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 3,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Anethole",
+    "aliases": [
+      "1-Methoxy-4-(1-propenyl)benzene"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Benzyl Cinnamate",
+    "aliases": [
+      "Cinnamic Acid Benzyl Ester"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Citrus Aurantium Dulcis Oil",
+    "aliases": [
+      "Orange Oil"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "D-Limonene",
+    "aliases": [
+      "(+)-4-Isopropenyl-1-methylcyclohexene"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Eugenol",
+    "aliases": [
+      "4-Allyl-2-methoxyphenol"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Farnesol",
+    "aliases": [
+      "3,7,11-Trimethyl-2,6,10-dodecatrien-1-ol"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Geraniol",
+    "aliases": [
+      "3,7-Dimethyl-trans-2,6-octadien-1-ol"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Isoeugenol",
+    "aliases": [
+      "2-Methoxy-4-(1-propenyl)phenol"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Linalool",
+    "aliases": [
+      "3,7-Dimethyl-1,6-octadien-3-ol"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Menthol",
+    "aliases": [
+      "5-Methyl-2-(1-methylethyl)cyclohexanol"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 1,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Neroli Oil",
+    "aliases": [
+      "Citrus Aurantium Amara Flower Oil"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Pulegone",
+    "aliases": [
+      "p-Menthan-3,8-dione"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 3,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Rose Oil",
+    "aliases": [
+      "Rosa Damascena Flower Oil"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Sandalwood Oil",
+    "aliases": [
+      "Santalum Album Oil"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 1,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Thymol",
+    "aliases": [
+      "5-Methyl-2-(1-methylethyl)-phenol"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Vanillin",
+    "aliases": [
+      "4-Hydroxy-3-methoxybenzaldehyde"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 1,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Ylang-Ylang Oil",
+    "aliases": [
+      "Cananga Odorata Flower Oil"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Benzalkonium Chloride",
+    "aliases": [
+      "Alkyl Dimethyl Benzyl Ammonium Chloride"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Cetrimonium Chloride",
+    "aliases": [
+      "CTAC"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Distearyldimonium Chloride",
+    "aliases": [
+      "Quaternium-18"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Isopropylparaben",
+    "aliases": [
+      "Isopropyl 4-Hydroxybenzoate"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 2,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Isobutylparaben",
+    "aliases": [
+      "Isobutyl 4-Hydroxybenzoate"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 2,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Benzyl Salicylate",
+    "aliases": [
+      "Benzyl 2-Hydroxybenzoate"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 1,
+    "evidence_basis": "Controversial / weak evidence"
+  },
+  {
+    "ingredient_name": "Diethyl Phthalate",
+    "aliases": [
+      "DEP"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 2,
+    "evidence_basis": "FDA advisory"
+  },
+  {
+    "ingredient_name": "Dimethyl Phthalate",
+    "aliases": [
+      "DMP"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 3,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Diisobutyl Phthalate",
+    "aliases": [
+      "DIBP"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 3,
+    "evidence_basis": "FDA advisory"
+  },
+  {
+    "ingredient_name": "Diisononyl Phthalate",
+    "aliases": [
+      "DINP"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 2,
+    "evidence_basis": "Controversial / weak evidence"
+  },
+  {
+    "ingredient_name": "Homosalate",
+    "aliases": [
+      "Homomenthyl Salicylate"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 1,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Methyl Salicylate",
+    "aliases": [
+      "Wintergreen Oil"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 3,
+    "evidence_basis": "FDA advisory"
+  },
+  {
+    "ingredient_name": "Octyl Methoxycinnamate",
+    "aliases": [
+      "OMC"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 1,
+    "evidence_basis": "Controversial / weak evidence"
+  },
+  {
+    "ingredient_name": "Padimate O",
+    "aliases": [
+      "Octyl Dimethyl PABA"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 2,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Tetrachlorosalicylanilide",
+    "aliases": [
+      "TCSA"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 3,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Triclocarban",
+    "aliases": [
+      "TCC"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 2,
+    "evidence_basis": "FDA advisory"
+  },
+  {
+    "ingredient_name": "Vitamin A",
+    "aliases": [
+      "Retinol"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 3,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Yohimbine",
+    "aliases": [
+      "Yohimbin"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 3,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Zinc Pyrithione",
+    "aliases": [
+      "ZP"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 1,
+    "evidence_basis": "Controversial / weak evidence"
+  },
+  {
+    "ingredient_name": "Angelica Archangelica Root Extract",
+    "aliases": [
+      "Angelica Root"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 2,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Arctium Lappa Seed Extract",
+    "aliases": [
+      "Burdock Seed"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 1,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Artemisia Vulgaris Extract",
+    "aliases": [
+      "Mugwort Extract"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 2,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Cinnamomum Cassia Bark Oil",
+    "aliases": [
+      "Cassia Oil"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Citrus Paradisi Peel Oil",
+    "aliases": [
+      "Grapefruit Oil"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 1,
+    "evidence_basis": "Controversial / weak evidence"
+  },
+  {
+    "ingredient_name": "Foeniculum Vulgare Oil",
+    "aliases": [
+      "Fennel Oil"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 2,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Lavandula Latifolia Oil",
+    "aliases": [
+      "Spike Lavender Oil"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 1,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Mentha Arvensis Leaf Oil",
+    "aliases": [
+      "Cornmint Oil"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 2,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Myristica Fragrans Kernel Oil",
+    "aliases": [
+      "Nutmeg Oil"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 3,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Pimpinella Anisum Fruit Oil",
+    "aliases": [
+      "Anise Oil"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 2,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Ruta Graveolens Extract",
+    "aliases": [
+      "Rue Extract"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 3,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Syzygium Aromaticum Bud Oil",
+    "aliases": [
+      "Clove Bud Oil"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Tanacetum Annuum Flower Oil",
+    "aliases": [
+      "Blue Tansy Oil"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 2,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Verbena Officinalis Extract",
+    "aliases": [
+      "Vervain Extract"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Wheat Germ Oil",
+    "aliases": [
+      "Triticum Vulgare Germ Oil"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 3,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Avocado Oil",
+    "aliases": [
+      "Persea Gratissima Oil"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 3,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Beeswax",
+    "aliases": [
+      "Cera Alba"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Brazil Nut Oil",
+    "aliases": [
+      "Bertholletia Excelsa Seed Oil"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Castor Oil",
+    "aliases": [
+      "Ricinus Communis Seed Oil"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 1,
+    "evidence_basis": "Controversial / weak evidence"
+  },
+  {
+    "ingredient_name": "Corn Oil",
+    "aliases": [
+      "Zea Mays Oil"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Cotton Seed Oil",
+    "aliases": [
+      "Gossypium Herbaceum Seed Oil"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Flaxseed Oil",
+    "aliases": [
+      "Linum Usitatissimum Seed Oil"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 4,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Hazelnut Oil",
+    "aliases": [
+      "Corylus Americana Oil"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 1,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Jojoba Oil",
+    "aliases": [
+      "Simmondsia Chinensis Seed Oil"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Mink Oil",
+    "aliases": [
+      "Mustela Oil"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 3,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Olive Oil",
+    "aliases": [
+      "Olea Europaea Fruit Oil"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Palm Oil",
+    "aliases": [
+      "Elaeis Guineensis Oil"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Peanut Oil",
+    "aliases": [
+      "Arachis Hypogaea Oil"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Sesame Oil",
+    "aliases": [
+      "Sesamum Indicum Seed Oil"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 3,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Soybean Oil",
+    "aliases": [
+      "Glycine Soja Oil"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 3,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Sunflower Oil",
+    "aliases": [
+      "Helianthus Annuus Seed Oil"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 0,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Sweet Almond Oil",
+    "aliases": [
+      "Prunus Amygdalus Dulcis Oil"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Walnut Oil",
+    "aliases": [
+      "Juglans Regia Seed Oil"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Aluminum Chlorohydrate",
+    "aliases": [
+      "ACH"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Ammonium Chloride",
+    "aliases": [
+      "Sal Ammoniac"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 2,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Benzoic Acid",
+    "aliases": [
+      "Dracylic Acid"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Cetrimonium Bromide",
+    "aliases": [
+      "CTAB"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 3,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Diazolidinyl Urea",
+    "aliases": [
+      "Germall 75"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 2,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Ethylenediaminetetraacetic Acid",
+    "aliases": [
+      "EDTA"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Formalin",
+    "aliases": [
+      "Formaldehyde Solution"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 3,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Hydroxyethylcellulose",
+    "aliases": [
+      "HEC"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 0,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Imidazolidinyl Urea",
+    "aliases": [
+      "Germall 115"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 2,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Methylchloroisothiazolinone",
+    "aliases": [
+      "MCI"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 3,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Methylisothiazolinone",
+    "aliases": [
+      "MI"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 3,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Parabens",
+    "aliases": [
+      "Methylparaben, Propylparaben"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Polyacrylamide",
+    "aliases": [
+      "PAM"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Quaternium-18",
+    "aliases": [
+      "Distearyldimonium Chloride"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Sodium Cocoamphoacetate",
+    "aliases": [
+      "Miranol"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Sodium Hypochlorite",
+    "aliases": [
+      "Bleach"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 3,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Stearamidopropyl Dimethylamine",
+    "aliases": [
+      "SAPDMA"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Talc",
+    "aliases": [
+      "Talcum Powder"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 0,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Triethanolamine Salicylate",
+    "aliases": [
+      "TEA Salicylate"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 2,
+    "evidence_basis": "FDA advisory"
+  },
+  {
+    "ingredient_name": "Urea",
+    "aliases": [
+      "Carbamide"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Xanthan Gum",
+    "aliases": [
+      "XG"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 0,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Zinc Pyrithione",
+    "aliases": [
+      "ZPT"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 2,
+    "evidence_basis": "FDA advisory"
+  },
+  {
+    "ingredient_name": "Butylated Hydroxyanisole",
+    "aliases": [
+      "BHA"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Butylated Hydroxytoluene",
+    "aliases": [
+      "BHT"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Carmine",
+    "aliases": [
+      "CI 75470"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 3,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Cobalt",
+    "aliases": [
+      "Cobalt Chloride"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Formaldehyde Resin",
+    "aliases": [
+      "Formaldehyde-Releasing Preservatives"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 3,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Gold",
+    "aliases": [
+      "Gold Sodium Thiosulfate"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Henna",
+    "aliases": [
+      "Lawsonia Inermis"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 3,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Mercaptobenzothiazole",
+    "aliases": [
+      "2-Mercaptobenzothiazole"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 3,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Methacrylate",
+    "aliases": [
+      "Acrylates"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Nickel",
+    "aliases": [
+      "Nickel Sulfate"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 3,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Paraphenylenediamine",
+    "aliases": [
+      "PPD"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 3,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Propylene Glycol",
+    "aliases": [
+      "1,2-Propanediol"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 1,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Quaternium-15",
+    "aliases": [
+      "Methenamine 3-Chloroallyl Chloride"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 3,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Resorcinol",
+    "aliases": [
+      "1,3-Benzenediol"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Thiomersal",
+    "aliases": [
+      "Thimerosal"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 3,
+    "evidence_basis": "FDA advisory"
+  },
+  {
+    "ingredient_name": "Toluenesulfonamide Formaldehyde Resin",
+    "aliases": [
+      "TSFR"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 3,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Wool Alcohols",
+    "aliases": [
+      "Lanolin Alcohols"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Aluminum Zirconium Tetrachlorohydrex Gly",
+    "aliases": [
+      "AZG"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 1,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Balsam of Peru",
+    "aliases": [
+      "Myroxylon Pereirae"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 3,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Cocamidopropyl Betaine",
+    "aliases": [
+      "CAPB"
+    ],
+    "risk_category": "allergen_risk",
+    "severity": 2,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Dibutyl Phthalate",
+    "aliases": [
+      "DBP"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 3,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Diethylhexyl Phthalate",
+    "aliases": [
+      "DEHP"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 3,
+    "evidence_basis": "FDA advisory"
+  },
+  {
+    "ingredient_name": "Di-n-butyl Phthalate",
+    "aliases": [
+      "DnBP"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 3,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Ethylhexyl Methoxycinnamate",
+    "aliases": [
+      "Octinoxate"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 1,
+    "evidence_basis": "Controversial / weak evidence"
+  },
+  {
+    "ingredient_name": "Homosalate",
+    "aliases": [
+      "3,3,5-Trimethylcyclohexyl Salicylate"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 1,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Methylparaben",
+    "aliases": [
+      "Methyl 4-Hydroxybenzoate"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 2,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Octocrylene",
+    "aliases": [
+      "2-Ethylhexyl 2-Cyano-3,3-Diphenylacrylate"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 1,
+    "evidence_basis": "Controversial / weak evidence"
+  },
+  {
+    "ingredient_name": "Oxybenzone",
+    "aliases": [
+      "Benzophenone-3"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 1,
+    "evidence_basis": "Controversial / weak evidence"
+  },
+  {
+    "ingredient_name": "Parabens",
+    "aliases": [
+      "Methylparaben, Ethylparaben, Propylparaben, Butylparaben"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 2,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Phthalates",
+    "aliases": [
+      "DBP, DEHP, DEP"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 3,
+    "evidence_basis": "FDA advisory"
+  },
+  {
+    "ingredient_name": "Propylparaben",
+    "aliases": [
+      "Propyl 4-Hydroxybenzoate"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 2,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Retinoids",
+    "aliases": [
+      "Retinol, Retinal, Tretinoin"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 3,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Salicylic Acid",
+    "aliases": [
+      "2-Hydroxybenzoic Acid"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Tetracycline",
+    "aliases": [
+      "Tetracycline Hydrochloride"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 3,
+    "evidence_basis": "FDA advisory"
+  },
+  {
+    "ingredient_name": "Triclosan",
+    "aliases": [
+      "5-Chloro-2-(2,4-dichlorophenoxy)phenol"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 2,
+    "evidence_basis": "FDA advisory"
+  },
+  {
+    "ingredient_name": "Vitamin A Palmitate",
+    "aliases": [
+      "Retinyl Palmitate"
+    ],
+    "risk_category": "pregnancy_risk",
+    "severity": 3,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Arginine",
+    "aliases": [
+      "L-Arginine"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 1,
+    "evidence_basis": "Controversial / weak evidence"
+  },
+  {
+    "ingredient_name": "Beef Tallow",
+    "aliases": [
+      "Suet"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Caprylic Acid",
+    "aliases": [
+      "Octanoic Acid"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 1,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Chamomile Extract",
+    "aliases": [
+      "Matricaria Recutita Extract"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 0,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Cocoa Butter",
+    "aliases": [
+      "Theobroma Cacao Butter"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 4,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Decyl Oleate",
+    "aliases": [
+      "Decyl 9-Octadecenoate"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 3,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Dihydrocholesterol",
+    "aliases": [
+      "Cholestanol"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Ethylhexyl Palmitate",
+    "aliases": [
+      "2-Ethylhexyl Palmitate"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 4,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Glyceryl Stearate SE",
+    "aliases": [
+      "Self-Emulsifying GMS"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 3,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Hexadecyl Alcohol",
+    "aliases": [
+      "Cetyl Alcohol"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Isocetyl Alcohol",
+    "aliases": [
+      "Hexadecanol, Iso"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 3,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Isopropyl Isostearate",
+    "aliases": [
+      "Isopropyl 16-Methylheptadecanoate"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 5,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Isopropyl Linolate",
+    "aliases": [
+      "Isopropyl 9,12-Octadecadienoate"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 4,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Isopropyl Myristate",
+    "aliases": [
+      "Isopropyl Tetradecanoate"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 5,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Lauric Acid",
+    "aliases": [
+      "Dodecanoic Acid"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 4,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Mink Oil",
+    "aliases": [
+      "Mustela Oil"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 5,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Myristic Acid",
+    "aliases": [
+      "Tetradecanoic Acid"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 5,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Myristyl Lactate",
+    "aliases": [
+      "Tetradecyl 2-Hydroxypropanoate"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 5,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Oleic Acid",
+    "aliases": [
+      "9-Octadecenoic Acid"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Oleth-3",
+    "aliases": [
+      "Oleth-3 Phosphate"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 3,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Oleyl Myristate",
+    "aliases": [
+      "9-Octadecenyl Myristate"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 5,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Palmitic Acid",
+    "aliases": [
+      "Hexadecanoic Acid"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "PEG 16 Lanolin",
+    "aliases": [
+      "Polyethylene Glycol 16 Lanolin"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 5,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "PEG 200 Dilaurate",
+    "aliases": [
+      "Polyethylene Glycol 200 Dilaurate"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 4,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "PEG 8 Stearate",
+    "aliases": [
+      "Polyethylene Glycol 8 Stearate"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "PPG 2 Myristyl Propionate",
+    "aliases": [
+      "Propylene Glycol 2 Myristyl Ether Propionate"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 5,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Shark Liver Oil",
+    "aliases": [
+      "Squalene"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 1,
+    "evidence_basis": "Controversial / weak evidence"
+  },
+  {
+    "ingredient_name": "Sodium Lauryl Sarcosinate",
+    "aliases": [
+      "N-Lauroyl Sarcosine Sodium Salt"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 3,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Sorbitan Sesquioleate",
+    "aliases": [
+      "Sorbitan Sesqui-(9-Octadecenoate)"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 4,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Squalane",
+    "aliases": [
+      "2,6,10,15,19,23-Hexamethyltetracosane"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 1,
+    "evidence_basis": "Controversial / weak evidence"
+  },
+  {
+    "ingredient_name": "Stearic Acid",
+    "aliases": [
+      "Octadecanoic Acid"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Stearyl Heptanoate",
+    "aliases": [
+      "Octadecyl Heptanoate"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 5,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Sucrose Acetate Isobutyrate",
+    "aliases": [
+      "SAIB"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 4,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Wheat Germ Glyceride",
+    "aliases": [
+      "Triticum Vulgare Glycerides"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 5,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Wheat Germ Oil",
+    "aliases": [
+      "Triticum Vulgare Germ Oil"
+    ],
+    "risk_category": "acne_risk",
+    "severity": 5,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Aluminum Lactate",
+    "aliases": [
+      "Aluminum 2-Hydroxypropanoate"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Ammonium Bicarbonate",
+    "aliases": [
+      "Hartshorn"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Benzethonium Chloride",
+    "aliases": [
+      "BTC"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 2,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Ceteareth-20",
+    "aliases": [
+      "Polyoxyethylene (20) Cetyl/Stearyl Ether"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Chloroxylenol",
+    "aliases": [
+      "PCMX"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 2,
+    "evidence_basis": "FDA advisory"
+  },
+  {
+    "ingredient_name": "Dodecyl Gallate",
+    "aliases": [
+      "Lauryl Gallate"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "Ethyl Linoleate",
+    "aliases": [
+      "Ethyl 9,12-Octadecadienoate"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Guar Hydroxypropyltrimonium Chloride",
+    "aliases": [
+      "GHPTC"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 0,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Hexamidine Diisethionate",
+    "aliases": [
+      "Hexamidine Dihydroxyethylsulfonate"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "Peer-reviewed consensus"
+  },
+  {
+    "ingredient_name": "Hydroxypropyl Guar",
+    "aliases": [
+      "HPG"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 0,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Isopropyl Alcohol",
+    "aliases": [
+      "IPA"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 2,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Laureth-23",
+    "aliases": [
+      "Polyoxyethylene (23) Lauryl Ether"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Magnesium Aluminum Silicate",
+    "aliases": [
+      "Veegum"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 0,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Methylcellulose",
+    "aliases": [
+      "MC"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 0,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Octoxynol-40",
+    "aliases": [
+      "Polyoxyethylene (40) Octylphenyl Ether"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 2,
+    "evidence_basis": "EU restriction list"
+  },
+  {
+    "ingredient_name": "PEG-6",
+    "aliases": [
+      "Polyethylene Glycol 6"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Poloxamer 407",
+    "aliases": [
+      "Pluronic F-127"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Polysorbate 20",
+    "aliases": [
+      "Tween 20"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Potassium Alum",
+    "aliases": [
+      "Alum"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Sodium Alginate",
+    "aliases": [
+      "Algin"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 0,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Sodium Bicarbonate",
+    "aliases": [
+      "Baking Soda"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Sodium Chloride",
+    "aliases": [
+      "Salt"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Sodium Cocoate",
+    "aliases": [
+      "Sodium Salt of Coconut Fatty Acid"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 2,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Sodium Gluconate",
+    "aliases": [
+      "Sodium 2,3,4,5,6-Pentahydroxyhexanoate"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 0,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Sorbitol",
+    "aliases": [
+      "D-Glucitol"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 0,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Titanium Dioxide",
+    "aliases": [
+      "TiO2"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 0,
+    "evidence_basis": "CIR report"
+  },
+  {
+    "ingredient_name": "Triceteareth-4 Phosphate",
+    "aliases": [
+      "Triceteareth-4"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Zinc Carbonate",
+    "aliases": [
+      "Smithsonite"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "Industry consensus"
+  },
+  {
+    "ingredient_name": "Zinc Gluconate",
+    "aliases": [
+      "Zinc D-Gluconate"
+    ],
+    "risk_category": "irritation_risk",
+    "severity": 1,
+    "evidence_basis": "Peer-reviewed consensus"
   }
 ]
