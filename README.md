@@ -1,7 +1,7 @@
 # CIRE API — Cosmetic Ingredient Risk Engine
 
 [![CIRE Certified](https://img.shields.io/badge/CIRE-Certified-brightgreen)](https://web-production-9cdb4.up.railway.app)
-[![Version](https://img.shields.io/badge/version-0.1.1-blue)]()
+[![Version](https://img.shields.io/badge/version-0.2.0-blue)]()
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)]()
 
 > Deterministic INCI safety scoring API for AI agents.  
@@ -71,6 +71,14 @@ Get your API key → [cire.ai](https://web-production-9cdb4.up.railway.app/docs)
 | Growth | 10,000 | $49 |
 | Scale | 100,000 | $299 |
 
+## Tier Behavior
+
+- **Free tier API key**: can call `/v1/analyze`, `/v1/credits`, billing/account endpoints
+- **Pro tier API key**: includes Free endpoints + `/v1/synergy` and `/v1/optimal`
+- Calling Pro endpoints with a Free key returns:
+  - `403 Forbidden`
+  - clear message: `Pro tier required for this endpoint...`
+
 ---
 
 ## API Reference
@@ -80,8 +88,36 @@ Full interactive docs: [/docs](https://web-production-9cdb4.up.railway.app/docs)
 ### `POST /v1/analyze`
 Analyze an INCI string. Costs 1 credit.
 
+### `POST /v1/synergy` *(Pro tier)*
+Deterministic pair scoring for beneficial and risky combinations.
+
+Request:
+```json
+{ "inci": "Water, Adapalene, Benzoyl Peroxide" }
+```
+
+Response includes:
+- `synergy_score`
+- `conflict_score`
+- `evidence_level`
+- `evidence_refs`
+
+### `POST /v1/optimal` *(Pro tier)*
+Goal-based deterministic recommendation endpoint.
+
+Request:
+```json
+{ "inci": "Water, Niacinamide", "goal": "acne" }
+```
+
+Response includes:
+- `recommended_additions`
+- `avoid_with_current`
+- `evidence_level`
+- `evidence_refs`
+
 ### `GET /v1/credits`
-Check remaining credits.
+Check remaining credits and key tier.
 
 ---
 

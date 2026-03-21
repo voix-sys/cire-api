@@ -1,0 +1,6 @@
+source,query,identifier,title,evidence_level,notes
+PubMed,niacinamide topical clinical trial,PMID:41307217,The Efficacy of Intense Pulsed Light Versus Topical Nicotinamide 4% in Treatment of Acne Vulgaris,B,topical nicotinamide efficacy signal
+PubMed,niacinamide topical clinical trial,PMID:40944166,Topical niacinamide-related recent clinical record (verify full title),B,needs final title cleanup in ingestion script
+PubMed,niacinamide topical clinical trial,PMID:40615745,The Efficacy of Intense Pulsed Light Versus Topical Nicotinamide 4% in Treatment of Acne Vulgaris,B,duplicate-check candidate
+PubMed,niacinamide topical clinical trial,PMID:40332575,Updated Meta-Analysis on Vitamin Supplementation for Chronic Pruritus,A,broad evidence class; keep as indirect support
+Crossref,retinol niacinamide topical,DOI:10.1201/b18895-16,Topical Niacinamide (book chapter),C,background material
