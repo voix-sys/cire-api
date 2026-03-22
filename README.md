@@ -85,6 +85,14 @@ Get your API key → [cire.ai](https://web-production-9cdb4.up.railway.app/docs)
 
 Full interactive docs: [/docs](https://web-production-9cdb4.up.railway.app/docs)
 
+Developer entrypoint:
+- [Developer Quickstart](./docs/DEVELOPER_QUICKSTART.md)
+
+Use-case articles:
+- [AI Shopping Agent Safety API](./docs/blog/2026-03-22-ai-shopping-agent-safety-api.md)
+- [K-Beauty Compliance INCI API](./docs/blog/2026-03-22-kbeauty-compliance-inci-api.md)
+- [CIRE Pro: Synergy + Optimal](./docs/blog/2026-03-22-cire-pro-synergy-optimal.md)
+
 ### `POST /v1/analyze`
 Analyze an INCI string. Costs 1 credit.
 

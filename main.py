@@ -230,19 +230,25 @@ async def analyze_batch(req: BatchAnalyzeRequest, api_key: str = Depends(get_api
         )
 
     out = []
+    charged_count = 0
+    error_count = 0
     for raw in req.inci_list:
         inci = (raw or "").strip()
         if not inci:
             out.append({"error": "inci must not be empty"})
+            error_count += 1
             continue
         result = compute_result(inci, INGREDIENT_DATASET, INTERACTION_DATASET)
         await deduct_credit(api_key)
         await log_usage(api_key, inci, result["risk_level"])
+        charged_count += 1
         out.append(result)
 
     updated = await get_key_info(api_key)
     return {
         "count": len(req.inci_list),
+        "charged_count": charged_count,
+        "error_count": error_count,
         "results": out,
         "credits_remaining": int(updated.get("credits", 0)) if updated else 0,
     }
