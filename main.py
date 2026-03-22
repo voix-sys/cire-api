@@ -22,6 +22,7 @@ from db import (
     log_usage,
     create_key,
     add_credits,
+    set_key_tier,
     get_ingredient_pairs,
     get_formulation_goal_rows,
     get_evidence_refs_by_ids,
@@ -414,9 +415,16 @@ async def paddle_webhook(request: Request):
     if event.get("event_type") == "transaction.completed":
         custom_data = event.get("data", {}).get("custom_data", {})
         api_key = custom_data.get("api_key")
-        credits = int(custom_data.get("credits", 0))
-        if api_key and credits:
+
+        # credit top-up
+        credits = int(custom_data.get("credits", 0) or 0)
+        if api_key and credits > 0:
             await add_credits(api_key, credits)
+
+        # tier upgrade (for Pro subscriptions/packages)
+        tier = str(custom_data.get("tier", "")).strip().lower()
+        if api_key and tier in {"pro", "enterprise"}:
+            await set_key_tier(api_key, tier)
 
     return {"status": "ok"}
 

@@ -119,6 +119,12 @@ Response includes:
 ### `GET /v1/credits`
 Check remaining credits and key tier.
 
+## Billing Automation (Paddle)
+- `/v1/webhook` handles `transaction.completed` events.
+- When `custom_data.credits` is present, credits are added automatically.
+- When `custom_data.tier` is `pro`/`enterprise`, API key tier is upgraded automatically.
+- Pro subscription checkout package ids supported: `pro_monthly`, `pro_yearly` (requires Paddle price IDs in env).
+
 ---
 
 ## Use Cases

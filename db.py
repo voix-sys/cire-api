@@ -325,6 +325,20 @@ async def add_credits(key: str, credits: int) -> int:
             return row[0] if row else 0
 
 
+async def set_key_tier(key: str, tier: str) -> str | None:
+    """Set API key tier (e.g., free/pro). Returns updated tier or None if key not found."""
+    normalized = (tier or "free").strip().lower()
+    if normalized not in {"free", "pro", "enterprise"}:
+        normalized = "free"
+
+    async with aiosqlite.connect(DB_PATH) as db:
+        await db.execute("UPDATE api_keys SET tier = ? WHERE key = ?", (normalized, key))
+        await db.commit()
+        async with db.execute("SELECT tier FROM api_keys WHERE key = ?", (key,)) as cur:
+            row = await cur.fetchone()
+            return row[0] if row else None
+
+
 async def create_key(name: str, email: str | None, credits: int = 1000, tier: str = "free") -> str:
     """Generate a new API key and store it."""
     key = "cire-" + secrets.token_urlsafe(24)
