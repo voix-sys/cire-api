@@ -137,6 +137,10 @@ class OptimalRequest(BaseModel):
     goal: str  # acne | brightening | antiaging | barrier
 
 
+class BatchAnalyzeRequest(BaseModel):
+    inci_list: list[str]
+
+
 class KeyCreateRequest(BaseModel):
     name: str
     email: str | None = None
@@ -179,6 +183,7 @@ def root():
         "docs": "/docs",
         "endpoints": {
             "analyze": "POST /v1/analyze",
+            "batch": "POST /v1/batch",
             "synergy": "POST /v1/synergy (pro)",
             "optimal": "POST /v1/optimal (pro)",
             "credits": "GET /v1/credits",
@@ -204,6 +209,43 @@ async def analyze(req: AnalyzeRequest, api_key: str = Depends(get_api_key)):
     await log_usage(api_key, req.inci, result["risk_level"])
 
     return result
+
+
+@app.post("/v1/batch", tags=["core"])
+async def analyze_batch(req: BatchAnalyzeRequest, api_key: str = Depends(get_api_key)):
+    """Batch analyze endpoint (1 credit per INCI item)."""
+    if not req.inci_list:
+        raise HTTPException(status_code=400, detail="inci_list must not be empty")
+    if len(req.inci_list) > 100:
+        raise HTTPException(status_code=400, detail="inci_list supports up to 100 items per request")
+
+    # Pre-flight credit check to avoid partial processing by default
+    key_info = await get_key_info(api_key)
+    needed = len(req.inci_list)
+    remaining = int(key_info.get("credits", 0)) if key_info else 0
+    if remaining < needed:
+        raise HTTPException(
+            status_code=402,
+            detail=f"Insufficient credits for batch. needed={needed}, remaining={remaining}",
+        )
+
+    out = []
+    for raw in req.inci_list:
+        inci = (raw or "").strip()
+        if not inci:
+            out.append({"error": "inci must not be empty"})
+            continue
+        result = compute_result(inci, INGREDIENT_DATASET, INTERACTION_DATASET)
+        await deduct_credit(api_key)
+        await log_usage(api_key, inci, result["risk_level"])
+        out.append(result)
+
+    updated = await get_key_info(api_key)
+    return {
+        "count": len(req.inci_list),
+        "results": out,
+        "credits_remaining": int(updated.get("credits", 0)) if updated else 0,
+    }
 
 
 @app.post("/v1/synergy", tags=["pro"])

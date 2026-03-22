@@ -88,6 +88,14 @@ Full interactive docs: [/docs](https://web-production-9cdb4.up.railway.app/docs)
 ### `POST /v1/analyze`
 Analyze an INCI string. Costs 1 credit.
 
+### `POST /v1/batch`
+Batch analyze up to 100 INCI strings per request. Costs 1 credit per item.
+
+Request:
+```json
+{ "inci_list": ["Water, Glycerin", "Water, Retinol, Glycolic Acid"] }
+```
+
 ### `POST /v1/synergy` *(Pro tier)*
 Deterministic pair scoring for beneficial and risky combinations.
 
@@ -142,6 +150,20 @@ Check remaining credits and key tier.
 - Deterministic outputs — same input always returns same output
 - Evidence-based: EU restriction list, FDA advisories, CIR reports, peer-reviewed consensus
 - 13/13 smoke tests passing
+
+## Pro Data Enrichment (idempotent)
+
+To enrich Pro formulation tables without duplicating rows:
+
+```bash
+cd cire-api
+python scripts/enrich_pro_seed.py
+```
+
+This script appends missing records for:
+- `evidence_refs`
+- `ingredient_pairs`
+- `formulation_goals`
 
 ---
 
