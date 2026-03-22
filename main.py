@@ -11,7 +11,7 @@ from contextlib import asynccontextmanager
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException, Security, Depends, Request
-from fastapi.responses import RedirectResponse
+from fastapi.responses import RedirectResponse, HTMLResponse
 from fastapi.security import APIKeyHeader
 from pydantic import BaseModel
 
@@ -181,6 +181,7 @@ def root():
         "service": "CIRE API",
         "version": "0.2.0",
         "docs": "/docs",
+        "content": "/content",
         "endpoints": {
             "analyze": "POST /v1/analyze",
             "batch": "POST /v1/batch",
@@ -189,6 +190,52 @@ def root():
             "credits": "GET /v1/credits",
         },
     }
+
+
+@app.get("/content", tags=["info"], response_class=HTMLResponse)
+def content_index():
+    return """
+<!doctype html>
+<html><head><meta charset='utf-8'><title>CIRE Content</title></head>
+<body style="font-family: Arial, sans-serif; max-width: 860px; margin: 40px auto; line-height:1.6;">
+  <h1>CIRE Content Hub</h1>
+  <p>Developer docs and use-case articles.</p>
+  <ul>
+    <li><a href="/content/developer-quickstart">Developer Quickstart</a></li>
+    <li><a href="/content/blog/ai-shopping-agent-safety-api">AI Shopping Agent Safety API</a></li>
+    <li><a href="/content/blog/kbeauty-compliance-inci-api">K-Beauty Compliance INCI API</a></li>
+    <li><a href="/content/blog/cire-pro-synergy-optimal">CIRE Pro: Synergy + Optimal</a></li>
+  </ul>
+</body></html>
+"""
+
+
+@app.get("/content/developer-quickstart", tags=["info"])
+def content_developer_quickstart():
+    return RedirectResponse(
+        url="https://github.com/voix-sys/cire-api/blob/main/docs/DEVELOPER_QUICKSTART.md"
+    )
+
+
+@app.get("/content/blog/ai-shopping-agent-safety-api", tags=["info"])
+def content_blog_1():
+    return RedirectResponse(
+        url="https://github.com/voix-sys/cire-api/blob/main/docs/blog/2026-03-22-ai-shopping-agent-safety-api.md"
+    )
+
+
+@app.get("/content/blog/kbeauty-compliance-inci-api", tags=["info"])
+def content_blog_2():
+    return RedirectResponse(
+        url="https://github.com/voix-sys/cire-api/blob/main/docs/blog/2026-03-22-kbeauty-compliance-inci-api.md"
+    )
+
+
+@app.get("/content/blog/cire-pro-synergy-optimal", tags=["info"])
+def content_blog_3():
+    return RedirectResponse(
+        url="https://github.com/voix-sys/cire-api/blob/main/docs/blog/2026-03-22-cire-pro-synergy-optimal.md"
+    )
 
 
 @app.post("/v1/analyze", tags=["core"])
