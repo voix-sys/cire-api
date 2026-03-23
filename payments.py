@@ -7,7 +7,7 @@ import hmac
 import hashlib
 import json
 from fastapi import HTTPException
-from paddle_billing import Client, Environment
+from paddle_billing import Client, Environment, Options
 from paddle_billing.Entities.Shared import TaxCategory
 from paddle_billing.Resources.Prices.Operations import CreatePrice
 from paddle_billing.Resources.Products.Operations import CreateProduct
@@ -58,7 +58,8 @@ CREDIT_PACKAGES = {
 
 
 def get_paddle_client() -> Client:
-    return Client(PADDLE_API_KEY, environment=PADDLE_ENV)
+    opts = Options(environment=PADDLE_ENV)
+    return Client(PADDLE_API_KEY, options=opts)
 
 
 def create_checkout_url(package_id: str, api_key: str, success_url: str) -> str:
