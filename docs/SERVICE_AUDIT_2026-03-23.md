@@ -18,10 +18,11 @@
 5. `GET /v1/credits` 정상 차감 반영
 
 ### 문제/리스크
-#### [치명] 결제 진입 실패(일부 500)
-- `POST /v1/checkout?package_id=starter|growth|scale` -> 500 발생
-- 기대 동작: 설정 미완료면 503 + 명확한 안내
-- 영향: 결제 전환 퍼널 단절
+#### [치명→해결] 결제 진입 실패(500) 이슈
+- 원인: Paddle Python SDK v1.13 API 변경(`Client` 초기화, `transactions.create` 호출 방식)
+- 조치: SDK v1.13 호환 코드로 수정/배포
+- 현재: `POST /v1/checkout?package_id=starter`에서 `checkout_url` 정상 반환 확인
+- 비고: `pro_monthly` 등 price 미설정 패키지는 503 안내 유지(의도 동작)
 
 #### [중요] 랜딩에 API 키 하드코딩 노출
 - 랜딩 스크립트에 공개 키 직접 포함
