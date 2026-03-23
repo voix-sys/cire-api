@@ -11,6 +11,9 @@ from paddle_billing import Client, Environment, Options
 from paddle_billing.Entities.Shared import TaxCategory
 from paddle_billing.Resources.Prices.Operations import CreatePrice
 from paddle_billing.Resources.Products.Operations import CreateProduct
+from paddle_billing.Resources.Transactions.Operations import CreateTransaction
+from paddle_billing.Resources.Transactions.Operations.Create import TransactionCreateItem
+from paddle_billing.Entities.Shared import CustomData
 
 PADDLE_API_KEY = os.environ.get("PADDLE_API_KEY", "")
 PADDLE_WEBHOOK_SECRET = os.environ.get("PADDLE_WEBHOOK_SECRET", "")
@@ -86,12 +89,18 @@ def create_checkout_url(package_id: str, api_key: str, success_url: str) -> str:
     if pkg.get("tier"):
         custom_data["tier"] = str(pkg["tier"]).lower()
 
-    transaction = paddle.transactions.create(
-        items=[{"price_id": price_id, "quantity": 1}],
-        custom_data=custom_data,
+    operation = CreateTransaction(
+        items=[TransactionCreateItem(price_id=price_id, quantity=1)],
+        custom_data=CustomData(custom_data),
     )
+    transaction = paddle.transactions.create(operation)
 
-    return transaction.checkout["url"]
+    checkout = getattr(transaction, "checkout", None)
+    url = getattr(checkout, "url", None) if checkout else None
+    if not url:
+        raise HTTPException(status_code=502, detail="Checkout URL unavailable. Try again later.")
+
+    return url
 
 
 def verify_webhook(payload: bytes, signature: str) -> dict:
