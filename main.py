@@ -205,6 +205,7 @@ def content_index():
     <li><a href="/content/blog/ai-shopping-agent-safety-api">AI Shopping Agent Safety API</a></li>
     <li><a href="/content/blog/kbeauty-compliance-inci-api">K-Beauty Compliance INCI API</a></li>
     <li><a href="/content/blog/cire-pro-synergy-optimal">CIRE Pro: Synergy + Optimal</a></li>
+    <li><a href="/content/roadmap">Visual Roadmap (HTML)</a></li>
   </ul>
 </body></html>
 """
@@ -236,6 +237,62 @@ def content_blog_3():
     return RedirectResponse(
         url="https://github.com/voix-sys/cire-api/blob/main/docs/blog/2026-03-22-cire-pro-synergy-optimal.md"
     )
+
+
+@app.get("/content/roadmap", tags=["info"], response_class=HTMLResponse)
+def content_roadmap():
+    return """
+<!doctype html>
+<html><head><meta charset='utf-8'><title>CIRE Roadmap Visual</title>
+<style>
+body{font-family:Arial,sans-serif;background:#f6f8fb;margin:0;padding:24px;color:#1f2937}
+.wrap{max-width:1100px;margin:0 auto}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(220px,1fr));gap:14px}
+.col{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:14px}
+.col h3{margin:0 0 10px;font-size:16px}
+.badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;background:#eef2ff;color:#3730a3;margin-bottom:8px}
+.item{background:#f9fafb;border:1px solid #e5e7eb;border-radius:8px;padding:8px 10px;margin:8px 0;font-size:14px}
+small{color:#6b7280}
+</style></head>
+<body><div class='wrap'>
+<h1>CIRE Visual Roadmap (2026 Q2)</h1>
+<p><small>Now → Sprint 1 → Sprint 2 → Sprint 3</small></p>
+<div class='grid'>
+  <div class='col'>
+    <div class='badge'>NOW</div>
+    <h3>Core API Live</h3>
+    <div class='item'>/v1/analyze, /v1/batch</div>
+    <div class='item'>/content hub live</div>
+    <div class='item'>Landing register flow fixed</div>
+  </div>
+  <div class='col'>
+    <div class='badge'>SPRINT 1 (2주)</div>
+    <h3>전환/안정화</h3>
+    <div class='item'>Checkout 500 fix + fail-safe</div>
+    <div class='item'>랜딩 키 노출 제거(완료)</div>
+    <div class='item'>Register → 1-click first call</div>
+    <div class='item'>register/first_call/checkout 계측</div>
+  </div>
+  <div class='col'>
+    <div class='badge'>SPRINT 2 (2주)</div>
+    <h3>Pro 고도화</h3>
+    <div class='item'>synergy/optimal 데이터 확장</div>
+    <div class='item'>evidence 응답 표준화</div>
+    <div class='item'>rate-limit/retry 정책 정리</div>
+    <div class='item'>배치/크레딧 회귀테스트</div>
+  </div>
+  <div class='col'>
+    <div class='badge'>SPRINT 3 (2주)</div>
+    <h3>성장 엔진</h3>
+    <div class='item'>X 콘텐츠 루틴 60/30/10</div>
+    <div class='item'>개발자 블로그 10개 누적</div>
+    <div class='item'>CTA/랜딩 A/B 테스트</div>
+    <div class='item'>주간 KPI 자동 리포트</div>
+  </div>
+</div>
+<p style='margin-top:14px'><a href='/content'>← Back to Content Hub</a></p>
+</div></body></html>
+"""
 
 
 @app.post("/v1/analyze", tags=["core"])
