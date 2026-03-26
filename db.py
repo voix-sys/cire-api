@@ -196,6 +196,19 @@ async def init_db():
 
         await db.execute(
             """
+            CREATE TABLE IF NOT EXISTS event_log (
+                id          INTEGER PRIMARY KEY AUTOINCREMENT,
+                event_name  TEXT NOT NULL,
+                source      TEXT,
+                session_id  TEXT,
+                meta_json   TEXT,
+                called_at   INTEGER NOT NULL
+            )
+            """
+        )
+
+        await db.execute(
+            """
             CREATE TABLE IF NOT EXISTS evidence_refs (
                 id              INTEGER PRIMARY KEY AUTOINCREMENT,
                 title           TEXT NOT NULL,
@@ -349,3 +362,12 @@ async def create_key(name: str, email: str | None, credits: int = 1000, tier: st
         )
         await db.commit()
     return key
+
+
+async def log_event(event_name: str, source: str | None = None, session_id: str | None = None, meta_json: str | None = None):
+    async with aiosqlite.connect(DB_PATH) as db:
+        await db.execute(
+            "INSERT INTO event_log (event_name, source, session_id, meta_json, called_at) VALUES (?, ?, ?, ?, ?)",
+            (event_name[:80], (source or "")[:80], (session_id or "")[:80], (meta_json or "")[:2000], int(time.time())),
+        )
+        await db.commit()

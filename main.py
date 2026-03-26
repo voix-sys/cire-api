@@ -4,6 +4,7 @@ CIRE API v0.2 — Cosmetic Ingredient Risk Engine
 M2M API for AI agents: pay-per-call + Pro formulation endpoints
 """
 
+import json
 import os
 import re
 import sys
@@ -26,6 +27,7 @@ from db import (
     get_ingredient_pairs,
     get_formulation_goal_rows,
     get_evidence_refs_by_ids,
+    log_event,
 )
 from payments import create_checkout_url, verify_webhook, CREDIT_PACKAGES
 from fastapi.middleware.cors import CORSMiddleware
@@ -145,6 +147,13 @@ class KeyCreateRequest(BaseModel):
     name: str
     email: str | None = None
     credits: int = 1000
+
+
+class EventRequest(BaseModel):
+    event: str
+    source: str | None = "landing"
+    session_id: str | None = None
+    meta: dict | None = None
 
 
 # --- Auth ---
@@ -507,6 +516,7 @@ async def register(req: RegisterRequest):
         raise HTTPException(status_code=400, detail="Valid email required")
 
     key = await create_key(req.name, req.email, credits=100, tier="free")
+    await log_event("register", source="api", meta_json=json.dumps({"email_domain": req.email.split("@")[-1].lower()}, ensure_ascii=False))
     return {
         "api_key": key,
         "name": req.name,
@@ -516,6 +526,20 @@ async def register(req: RegisterRequest):
         "message": "Welcome to CIRE! You have 100 free credits. Use X-API-Key header to authenticate.",
         "docs": "https://web-production-9cdb4.up.railway.app/docs",
     }
+
+
+@app.post("/v1/events", tags=["analytics"])
+async def events(req: EventRequest):
+    event_name = (req.event or "").strip().lower()
+    if not event_name:
+        raise HTTPException(status_code=400, detail="event is required")
+    await log_event(
+        event_name=event_name,
+        source=(req.source or "landing"),
+        session_id=req.session_id,
+        meta_json=json.dumps(req.meta or {}, ensure_ascii=False),
+    )
+    return {"ok": True, "event": event_name}
 
 
 @app.get("/v1/packages", tags=["billing"])
@@ -553,7 +577,8 @@ async def checkout_redirect(package_id: str, api_key: str):
 
 
 @app.get("/v1/checkout/success", tags=["billing"])
-def checkout_success():
+async def checkout_success():
+    await log_event("checkout_success", source="api")
     return {"message": "Payment successful! Credits will be added to your account shortly."}
 
 
